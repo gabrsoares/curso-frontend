@@ -49,4 +49,21 @@ são ramificações / versões paralelas
 - DOD Definition of Done: critérios de aceite
 - versionamento 1.0.0
 
+git checkout -b dev (cria uma branch)
+git checkout master (muda de branch)
 
+### Merge
+Mescla de branchs
+Você pode precisar resolver conflitos manualmente
+
+git merge main 
+
+### Pull requests
+Mescla de branchs no repositório
+Permite code review
+O repositório resolve os conflitos automaticamente
+
+
+### Configura o gitflow
+git flow init 
+git flow feature start {nome-da-feature} 

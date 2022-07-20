@@ -1,5 +1,4 @@
 # Curso-frontend
-#### EBAC
 
 # GIT
 
@@ -35,6 +34,7 @@ Informação de alteração
 - Após testado todo o seu código 
 - git add *
 - git commit -m "mensagem"
+- git push (enviar alterações para o repositório)
 
 ## Gitflow
 Fluxo do git

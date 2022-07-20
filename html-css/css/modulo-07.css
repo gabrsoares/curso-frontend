@@ -1,0 +1,67 @@
+/* Importanto CSS de Tabela */
+@import 'tabelas.css';
+
+html {
+    font-family: 'Oswald', sans-serif; 
+}
+
+body {
+    background-color: #24242B;
+}
+
+header h2 {
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+nav {
+    background-color: #5E583B;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: block;
+    width: 100%;
+    height: auto;
+    color: #12110F;
+}
+h3 {
+    font-size: 2rem;
+}
+
+a:hover {
+text-decoration: underline #12110F ;
+
+}
+
+p {
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+li {
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+}
+
+section {
+    background: #8A8A94
+}
+
+
+header, footer {
+    background-color: #0E0E11;
+    color: #878791;;
+
+}
+footer p {
+    font-size: 2rem;
+}
+
+.foto-gabriel {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+

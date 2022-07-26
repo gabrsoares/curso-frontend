@@ -149,3 +149,20 @@ footer small {
     font-size: 80%;
     display: block;
 }
+
+@media (max-width: 425px) {
+
+    .container {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    section nav, section article {
+        width: 100%;
+    }   
+
+    section nav {
+        margin-bottom: 20px;
+    }
+
+}

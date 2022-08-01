@@ -176,7 +176,7 @@ footer small {
 .legenda-container {
     width: 30vw;
     float: right;
-    margin: 40px 0 0 0;
+    margin: 40px -400px 0 0;
 }
 
 .legenda {

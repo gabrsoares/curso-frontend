@@ -15,7 +15,7 @@ body {
     overflow: hidden;
 }
 
-.container {
+.container-2 {
     display: block;
     float: left;
     padding: 0;
@@ -28,7 +28,7 @@ body {
     padding-left: 15.5%;
 }
 
-.container-header {
+.container {
     display: block;
     float: left;
     padding: 0;
@@ -242,6 +242,12 @@ dd {
 }
 
 @media (max-width: 920px) {
+
+    .container-2 {
+        margin-left: 0px;
+        padding: 10px;
+        width: 90%;
+    }
 
     dd {
         margin-left: 0px;

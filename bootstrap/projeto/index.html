@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=], initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/custom.css">
-    <title>Document</title>
+    <title>Loja de roupas</title>
 </head>
 <body>
 
@@ -14,9 +14,14 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1>Logo</h1>
+                    <h1 id="logo-title">Loja de roupas</h1>
                 </div>
-                <div class="col">
+                <div class="col col-busca">
+                    <input type="text" name="busca" placeholder="O que está procurando?" id="busca">
+                    <button class="btn-busca"><img id="lupa" src="./images/lupa.svg" alt="">
+                    </button>
+                </div>
+                <div class="col-md-4 col-sm-12">
                     <ul class="nav justify-content-end" >
                         <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
@@ -30,15 +35,14 @@
 
     <section id="sobre">
         <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-sm-12">
-                    <h2>Sobre nós</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error labore aliquam dolorem ab. Velit sint nobis quis veritatis. Repudiandae dicta nihil doloremque ratione adipisci, similique obcaecati sint corporis illum iusto.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quo dolore tempora vero! Qui voluptatum asperiores explicabo maiores, cumque ut velit. Deleniti magnam voluptatum voluptatem inventore excepturi eaque cum quibusdam?</p>
-                    <a class="btn btn-lg btn-success">Botão</a>
+            <div class="row align-items-center">
+                <div class="col-md-5 col-sm-12 promo">
+                    <h2>Promoção de verão!</h2>
+                    <h4>50% OFF Em todas as peças</h4>
+                    <a class="btn btn-secondary btn-promo" href="#produtos">Confira aqui</a>
                 </div>
-                <div class="col-md-5 col-sm-12">
-                    <img src="./images/sobre-nos.jpg" alt="Sobre nós" class="img-fluid">
+                <div class="col-md-7 col-sm-12">
+                    <img src="./images/verao-sm.jpg" alt="Sobre nós" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -50,32 +54,30 @@
                 <div class="col">
 
                     <h2>Produtos</h2>
-
+                   
                     <div class="card">
-                        <img src="./images/sobre-nos.jpg" alt="Sobre nós" class="img-fluid">
+                        <img src="./images/produto-1.jpg" alt="Sobre nós" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Titulo 5</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati iste quibusdam ipsum, velit voluptates. Dolor illum labore animi! Totam unde magni distinctio sequi quae, eos ea eaque laborum aliquam.
-                            </p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+                            <h5 class="card-title">Preta básica</h5>
+                            <p class="card-text">Camisa algodão preta feminina</p>
+                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./images/sobre-nos.jpg" alt="Sobre nós" class="img-fluid">
+                        <img src="./images/produto-2.jpg" alt="camisa bege" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Titulo 5</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati iste quibusdam ipsum, velit voluptates. Dolor illum labore animi! Totam unde magni distinctio sequi quae, eos ea eaque laborum aliquam.
+                            <h5 class="card-title">Bege para todos</h5>
+                            <p class="card-text">Camisa algodão bege unissex
                             </p>
-                            <a class="btn btn-primary" href="#produto-2">Ver produto</a>
+                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./images/sobre-nos.jpg" alt="Sobre nós" class="img-fluid">
+                        <img src="./images/produto-3.jpg" alt="Camisa branca masculina" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Titulo 5</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati iste quibusdam ipsum, velit voluptates. Dolor illum labore animi! Totam unde magni distinctio sequi quae, eos ea eaque laborum aliquam.
-                            </p>
-                            <a class="btn btn-primary" href="#produto-3">Ver produto</a>
+                            <h5 class="card-title">Branca básica</h5>
+                            <p class="card-text">Camiseta algodão masculina</p>
+                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
                         </div>
                     </div>
 
@@ -105,7 +107,7 @@
                                 <textarea class="form-control" placeholder="Deixe uma mensagem" name="" rows="5"></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-lg btn-success">Solicitar cotação</button>
+                            <button type="submit" class="btn btn-lg btn-secondary">Solicitar cotação</button>
 
                     </form>
                 </div>
@@ -117,7 +119,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">                   
-                    <h5 class="modal-title">Produto 1</h5>
+                    <h5 class="modal-title">Preta básica</h5>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -152,6 +154,86 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">                   
+                    <h5 class="modal-title">Bege para todos</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P</td>
+                                <td>R$ 120</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>R$ 220</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>R$ 320</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">                   
+                    <h5 class="modal-title">Branca básica</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P</td>
+                                <td>R$ 100</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>R$ 200</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>R$ 300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

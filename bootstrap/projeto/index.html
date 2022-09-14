@@ -12,17 +12,13 @@
 
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-sm-12 col-logo">
                     <h1 id="logo-title">Loja de roupas</h1>
                 </div>
-                <div class="col col-busca">
-                    <input type="text" name="busca" placeholder="O que está procurando?" id="busca">
-                    <button class="btn-busca"><img id="lupa" src="./images/lupa.svg" alt="">
-                    </button>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <ul class="nav justify-content-end" >
+                
+                <div class="col-md-6 col-sm-12 col-nav">
+                    <ul class="nav justify-content-md-end justify-content-sm-center">
                         <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
@@ -42,7 +38,7 @@
                     <a class="btn btn-secondary btn-promo" href="#produtos">Confira aqui</a>
                 </div>
                 <div class="col-md-7 col-sm-12">
-                    <img src="./images/verao-sm.jpg" alt="Sobre nós" class="img-fluid">
+                    <img src="./images/verao-sm.jpg" alt="verão" class="img-fluid"> 
                 </div>
             </div>
         </div>
@@ -63,7 +59,7 @@
                             <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card h-80">
                         <img src="./images/produto-2.jpg" alt="camisa bege" class="img-fluid">
                         <div class="card-body">
                             <h5 class="card-title">Bege para todos</h5>
@@ -97,17 +93,17 @@
                     <form class="form">
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" id="">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" id="" required>
 
                             <div class="input-group">
-                                <input class="form-control" type="text" name="email" placeholder="Digite seu email" id="">
+                                <input class="form-control" type="email" name="email" placeholder="Digite seu email" id="inputEmail01" required>
                             </div>
 
                             <div class="input-group">
-                                <textarea class="form-control" placeholder="Deixe uma mensagem" name="" rows="5"></textarea>
+                                <textarea class="form-control" placeholder="Deixe uma mensagem" name="" rows="5" required></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-lg btn-secondary">Solicitar cotação</button>
+                            <button type="submit" class="btn btn-secondary">Solicitar cotação</button>
 
                     </form>
                 </div>

@@ -1,0 +1,11 @@
+textarea.form-control {
+    width: 100% !important;
+}
+
+#cadastro {
+    padding-bottom: 5.19rem;
+}
+
+.form-check {
+    padding-left: 0;
+}

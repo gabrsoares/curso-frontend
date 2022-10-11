@@ -4,12 +4,29 @@ body {
 }
 
 header {
-    margin-top: 30px;
-    height: 80px;
+    display: flex;
+    align-items: center;
+    height: 140px;
+    background-color: #000000a9;
+    color: white;
+}
+
+.carousel-inner {
+    padding-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+}   
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.carousel-dark .carousel-caption {
+    color: #fff;
 }
 
 .nav-item a{
-    color: black;
+    color: white;
 }
 
 .nav-item a:hover {
@@ -22,6 +39,11 @@ section {
     padding-bottom: 4rem;
 }
 
+/* #contato {
+    background-color: #000000a9;
+    color: white;
+} */
+
 input, textarea {
     margin-bottom: 1rem;
 }
@@ -31,33 +53,68 @@ input, textarea {
     float: left;
     margin: 5px;
 }
+
+p {
+    margin-bottom: 0;
+}
+
+.fa-brands {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #000000a9;
+    color: white;
+}
+
+/* Mobile */
 @media (max-width: 768px){
+    .col {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
     .card {
         width: 30%;
+        height: 320px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
-@media (max-width: 600px){
 
+@media (max-width: 600px){
+    
     nav{
         text-align: center;
     }
-
-    div.col-logo{
-        text-align: center;
-    }
     
-    div.promo{
-        margin-top: 25px;
-    }
-
-    a.btn-promo{
-        margin-bottom: 25px;
-    }
-
     .card {
         width: 100%;
         margin-left: 0px;
+        height: auto;
+    }
+}
+@media (max-width: 425px) {
+    #logo-title {
+        text-align: center;
+    }
+    
+    .footer-texto {
+        padding: 0 0 10px 0;
+        
+    }
+    
+    .footer-icons {
+        justify-content: space-around;
     }
 }
 

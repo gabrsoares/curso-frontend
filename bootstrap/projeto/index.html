@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=], initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/custom.css">
     <title>Loja de roupas</title>
 </head>
 <body>
-
+    
     <header>
         <div class="container">
             <div class="row align-items-center">
@@ -18,7 +18,7 @@
                 </div>
                 
                 <div class="col-md-6 col-sm-12 col-nav">
-                    <ul class="nav justify-content-md-end">
+                    <ul class="nav justify-content-md-end justify-content-center">
                         <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
@@ -28,209 +28,245 @@
             </div>
         </div>
     </header>
-
-    <section id="sobre">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 col-sm-12 promo">
-                    <h2>Promoção de verão!</h2>
-                    <h4>50% OFF Em todas as peças</h4>
-                    <a class="btn btn-secondary btn-promo" href="#produtos">Confira aqui</a>
-                </div>
-                <div class="col-md-7 col-sm-12">
-                    <img src="./images/verao-sm.jpg" alt="verão" class="img-fluid"> 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="produtos">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-
-                    <h2>Produtos</h2>
-                   
-                    <div class="card">
-                        <img src="./images/produto-1.jpg" alt="Sobre nós" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Preta básica</h5>
-                            <p class="card-text">Camisa algodão preta feminina</p>
-                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
-                        </div>
-                    </div>
-                    <div class="card h-80">
-                        <img src="./images/produto-2.jpg" alt="camisa bege" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Bege para todos</h5>
-                            <p class="card-text">Camisa algodão bege unissex
-                            </p>
-                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./images/produto-3.jpg" alt="Camisa branca masculina" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Branca básica</h5>
-                            <p class="card-text">Camiseta algodão masculina</p>
-                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Contato</h2>
-                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <form class="form">
-
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" id="" required>
-
-                            <div class="input-group">
-                                <input class="form-control" type="email" name="email" placeholder="Digite seu email" id="inputEmail01" required>
-                            </div>
-
-                            <div class="input-group">
-                                <textarea class="form-control" placeholder="Deixe uma mensagem" name="" rows="5" required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-secondary">Solicitar cotação</button>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="modal fade" id="modal-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">                   
-                    <h5 class="modal-title">Preta básica</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Confira o tamanho e os preços</h6>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Tamanho</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>P</td>
-                                <td>R$ 100</td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>R$ 200</td>
-                            </tr>
-                            <tr>
-                                <td>G</td>
-                                <td>R$ 300</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal-2">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">                   
-                    <h5 class="modal-title">Bege para todos</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Confira o tamanho e os preços</h6>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Tamanho</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>P</td>
-                                <td>R$ 120</td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>R$ 220</td>
-                            </tr>
-                            <tr>
-                                <td>G</td>
-                                <td>R$ 320</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modal-3">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">                   
-                    <h5 class="modal-title">Branca básica</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Confira o tamanho e os preços</h6>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Tamanho</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>P</td>
-                                <td>R$ 100</td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>R$ 200</td>
-                            </tr>
-                            <tr>
-                                <td>G</td>
-                                <td>R$ 300</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./images/promo-verao-md.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-sm-block d-md-block">
+                    <h3>PROMOÇÃO DE VERÃO</h5>
+                    <p class="fs-3">50% de desconto em todos os produtos!</p>
+                </div>
+                <a class="btn btn-light stretched-link" href="#produtos"></a>
+            </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./images/novo-verao-md.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-sm-block d-md-block">
+                        <h3>NOVA COLEÇÃO</h5>
+                        <p class="fs-3">Confira a nossa nova coleção de verão!</p>
+                    </div>
+                    <a class="btn btn-light stretched-link" href="#produtos"></a>
+                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+            
+            <section id="produtos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            
+                            <h2>Produtos</h2>
+                            
+                            <div class="card">
+                                <img src="./images/produto-1.jpg" alt="Sobre nós" class="img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">Preta básica</h5>
+                                    <p class="card-text">Camisa algodão preta feminina</p>
+                                    <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./images/produto-2.jpg" alt="camisa bege" class="img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bege básica</h5>
+                                    <p class="card-text">Camisa algodão bege unissex
+                                    </p>
+                                    <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./images/produto-3.jpg" alt="Camisa branca masculina" class="img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">Branca básica</h5>
+                                    <p class="card-text">Camiseta algodão masculina</p>
+                                    <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contato">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <h2>Contato</h2>
+                            <p>Ficou interessado? <a href="./cadastro.html">Clique aqui</a> para realizar o seu cadastro! </p>
+                            <div class="clearfix"></div>
+                            <p>Possui alguma sugestão? Fique à vontade para preencher o formulário ao lado!</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <form class="form">
+                                
+                                <div class="input-group">
+                                    <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" id="" required>
+                                    
+                                    <div class="input-group">
+                                        <input class="form-control" type="email" name="email" placeholder="Digite seu email" id="inputEmail01" required>
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <textarea class="form-control" placeholder="Deixe uma mensagem" name="" rows="5" required></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-dark">Enviar</button>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer>
+                    <div class="row py-3 m-0 w-100">
+                        <div class="footer-texto col-sm-12 p-sm-0 col-md-10 d-flex align-items-center justify-content-center">
+                            <p>Todos os direitos reservados - 2022 &copy;</p>
+                        </div>
+                        <div class="footer-icons col-sm-12 col-md-2 d-flex justify-content-md-end justify-content-sm-around">
+                            <i class="fa-brands fa-square-facebook fa-2x"></i>
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                            <i class="fa-brands fa-square-twitter fa-2x"></i>
+                        </div>
+                    </div>
+                </footer>
+                
+                <!-- Modal Preços -->
+                <div class="modal fade" id="modal-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">                   
+                                <h5 class="modal-title">Preta básica</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Confira o tamanho e os preços</h6>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Tamanho</th>
+                                            <th>Valor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>P</td>
+                                            <td>R$ 100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>M</td>
+                                            <td>R$ 200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>G</td>
+                                            <td>R$ 300</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal fade" id="modal-2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">                   
+                                <h5 class="modal-title">Bege para todos</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Confira o tamanho e os preços</h6>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Tamanho</th>
+                                            <th>Valor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>P</td>
+                                            <td>R$ 120</td>
+                                        </tr>
+                                        <tr>
+                                            <td>M</td>
+                                            <td>R$ 220</td>
+                                        </tr>
+                                        <tr>
+                                            <td>G</td>
+                                            <td>R$ 320</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">                   
+                                <h5 class="modal-title">Branca básica</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Confira o tamanho e os preços</h6>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Tamanho</th>
+                                            <th>Valor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>P</td>
+                                            <td>R$ 100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>M</td>
+                                            <td>R$ 200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>G</td>
+                                            <td>R$ 300</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <script src="https://kit.fontawesome.com/19a0f82948.js" crossorigin="anonymous"></script>
+            </body>
+            </html>

@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=], initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="./style/custom.css">
+    <link rel="stylesheet" href="./style/custom-form.css">
     <title>Loja de roupas</title>
 </head>
 <body>
@@ -18,11 +20,11 @@
                 </div>
                 
                 <div class="col-md-6 col-sm-12 col-nav">
-                    <ul class="nav justify-content-md-end">
+                    <ul class="nav justify-content-md-end justify-content-center">
                         <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#contato">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,42 +44,58 @@
             <form class="form">
 
                 <div class="row">
-                    <div class="col">
+                    <div class="col col-md-6 col-12">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                            <input class="form-control border-dark" type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col col-md-6 col-12">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                            <input class="form-control border-dark" type="email" name="email" placeholder="Digite seu email" required>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col">
-                        <label for="endereco" class="col-form-label col-form-label-sm">Endereço completo</label>
-                        <input type="text" id="endereco" class="form-control" placeholder="Endereço completo">
+                    <div class="col col-md-6 col-12">
+                        <label for="endereco" class="col-form-label col-form-label-sm">Endereço</label>
+                        <input type="text" id="endereco" class="form-control border-dark" placeholder="Digite seu endereço" required>
+                    </div>
+                    <div class="col col-md-2">
+                        <label for="numero" class="col-form-label col-form-label-sm">Número</label>
+                        <input type="text" id="numero" class="form-control border-dark" placeholder="Nº do endereço" required>
+                    </div>
+                    <div class="col col-md-2">
+                        <label for="complemento" class="col-form-label col-form-label-sm">Complemento</label>
+                        <input type="text" id="complemento" class="form-control border-dark" placeholder="Complemento" required>
+                    </div>
+                    <div class="col col-md-2 col-12">
+                        <label for="bairro" class="col-form-label col-form-label-sm">Bairro</label>
+                        <input type="text" id="bairro" class="form-control border-dark" placeholder="Bairro" required>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col">
-                        <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
-                        <input type="text" name="cidade" id="cidade" class="form-control">
-                    </div>
-                    <div class="col">
+                    <div class="col col-md-3 col-12">
                         <label for="estado" class="col-form-label col-form-label-sm">Estado</label>
-                        <select name="estado" id="estado" class="form-control">
+                        <select name="estado" id="estado" class="form-control border-dark" required>
                             <option value="">Selecione um estado</option>
                             <option value="sp">SP</option>
-                            <option value="al">AL</option>
+                            <option value="pe">PE</option>
                             <option value="mg">MG</option>
                         </select>
                     </div>
+                    <div class="col col-md-3 col-12">
+                        <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" class="form-control border-dark" required>
+                    </div>
                     <div class="col">
                         <label for="cep" class="col-form-label col-form-label-sm">CEP</label>
-                        <input type="text" name="cep" id="cep" class="form-control">
+                        <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" class="form-control border-dark" required>
+                    </div>
+                    <div class="col">
+                        <label for="tel" class="col-form-label col-form-label-sm">Telefone/Celular</label>
+                        <input type="text" id="tel" placeholder="(xx)xxxxx-xxxx" class="form-control border-dark">
                     </div>
                 </div>
 
@@ -85,8 +103,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="input-group">
-                            <label for="info" class="col-form-label col-form-label-sm">Informações</label>
-                            <textarea class="form-control" name="informacoes" id="info" rows="5"></textarea>
+                            <label for="comp-adicional" class="col-form-label col-form-label-sm">Complementos adicionais</label>
+                            <textarea class="form-control border-dark" id="comp-adicional" rows="5"></textarea>
                         </div>
                     </div>
                 </div>
@@ -101,7 +119,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-lg btn-success">Realizar cadastro</button>
+                <button type="submit" class="btn btn-lg btn-secondary">Realizar cadastro</button>
 
             </form>
 
@@ -111,9 +129,22 @@
         </div> <!-- end .container -->
     </section>
 
-
-
-
+    
+    <footer>
+        <div class="row py-3 m-0 w-100">
+            <div class="footer-texto col-sm-12 p-sm-0 col-md-10 d-flex align-items-center justify-content-center">
+                <p>Todos os direitos reservados - 2022 &copy;</p>
+            </div>
+            <div class="footer-icons col-sm-12 col-md-2 d-flex justify-content-md-start justify-content-sm-around">
+                <i class="fa-brands fa-square-facebook fa-2x"></i>
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-square-twitter fa-2x"></i>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
     <div class="modal fade" id="modal-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -122,20 +153,20 @@
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h6>Preencha os campos para receber novidades e promoções</h6>
-
+                    <h6>Preencha os campos para receber novidades, promoções e cupons de desconto</h6>
+                    
                     <form class="form-inline">
                         <div class="row">
-                            <div class="form-group col-4">
+                            <div class="form-group col-md-4 col-6">
                                 <input type="text" class="form-control form-control-sm mb-2" name="nome"
-                                    placeholder="nome" required>
-                            </div>
-                            <div class="form-group col-4">
+                                    placeholder="Nome" required>
+                                </div>
+                                <div class="form-group col-md-4 col-6">
                                 <input type="text" class="form-control form-control-sm mb-2" name="e-mail"
-                                    placeholder="e-mail" required>
+                                placeholder="E-mail" required>
                             </div>
-                            <div class="form-group col-4">
-                                <button type="submit" class="btn btn-sm btn-success">Receber novidades</button>
+                            <div class="form-group col-md-4">
+                                <button type="submit" class="btn btn-sm btn-secondary">Receber novidades</button>
                             </div>
                         </div>
                     </form>
@@ -149,6 +180,7 @@
 
     </div>
     
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/19a0f82948.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@ header {
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.295);
+    height: 170px;
 }
 
 .carousel-dark .carousel-caption {
@@ -101,6 +102,10 @@ footer {
         width: 100%;
         margin-left: 0px;
         height: auto;
+    }
+
+    .form-contato {
+        margin-bottom: 2rem;
     }
 }
 @media (max-width: 425px) {

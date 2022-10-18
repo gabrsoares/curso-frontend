@@ -13,3 +13,9 @@ textarea.form-control {
 .contato-head {
     margin-bottom: 2rem;
 }
+
+@media (max-width: 768px) {
+    :root {
+        scroll-behavior: auto;
+    }
+}

@@ -22,15 +22,14 @@ $(document).ready(function(){
     // $('.featured-item:first h4').fadeIn('2000')
     // $('.featured-item:first h4').fadeOut('2000')
     // $('.featured-item:first h4').css('color', '#f00')
-    
-    $('.featured-item h4').dblclick (function(){
+   /*  $('.featured-item h4').dblclick (function(){
         $(this).css({
             'color': '#f00',
             'background': '#ff0',
             'font-weight': '100',
         })
     
-    })
+    }) */
 
  //Manipulação de eventos
  $('.featured-item a').on('blur', function(event){
@@ -41,11 +40,9 @@ $(document).ready(function(){
 
  })
 
-
-
-
-
-
+$('.navbar-toggler').click(function(){
+    $('#navbarResponsive').toggle();
+});
 
 })
     

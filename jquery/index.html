@@ -12,11 +12,11 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="./assets/images/header-logo.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="./assets/images/header-logo.png" id="logo-img" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="collapse justify-content-center navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home
@@ -24,13 +24,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Produtos</a>
+                        <a class="nav-link" href="#featured">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Sobre nós</a>
+                        <a class="nav-link" href="#footer">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contato</a>
+                        <a class="nav-link" href="#contact">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="owl-carousel owl-theme">
+                    <div class="products owl-carousel owl-theme">
                         <div class="featured-item">
                             <img src="assets/images/item-01.jpg" alt="Item 1">
                             <h4>Produto 1</h4>
@@ -140,7 +140,37 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 contato">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h3>Contato</h3>
+                    </div>
+                    <p>Entre em contato conosco pelo formulário!</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Endereço de e-mail</label>
+                            <input type="email" class="form-control" pattern="" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -162,10 +192,10 @@
                 <div class="col-md-12">
                     <div class="social-icons">
                         <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a class="logo-face" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="logo-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="logo-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a class="logo-rss" href="#"><i class="fa fa-rss"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -179,11 +209,11 @@
                 <div class="col-md-12">
                     <div class="copyright-text">
                         <p>WebStore &copy; Todos os direitos reservados</p>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     
     <script src="./vendor/jquery/jquery-3.6.1.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>

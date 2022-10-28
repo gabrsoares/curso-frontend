@@ -154,16 +154,17 @@
                     <form>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Endereço de e-mail</label>
-                            <input type="email" class="form-control" pattern="" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                            <input type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" title="nome@exemplo.com" id="exampleFormControlInput1" placeholder="nome@exemplo.com" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                         </div>
+                        <button type="submit" class="btn btn-dark rounded">Enviar</button>
                     </form>
                 </div>
             </div>

@@ -554,6 +554,10 @@ a {
 	font-weight: 400;
 }
 
+#contact {
+	margin-bottom: 2rem;
+}
+
 .contato .section-heading {
 	margin-top: 0;
 }

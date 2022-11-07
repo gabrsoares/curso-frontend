@@ -685,6 +685,22 @@ form {
 	border: none;
 }
 
+.logo-face{
+	background-image: url(../assets/images/facebook-svgrepo-com.svg);
+}
+
+.logo-twitter {
+	background-image: url(../assets/images/twitter-svgrepo-com.svg);
+}
+
+.logo-linkedin {
+	background-image: url(../assets/images/linkedin-svgrepo-com.svg);
+}
+
+.logo-rss {
+	background-image: url(../assets/images/rss-svgrepo-com.svg);
+}
+
 /* Responsive Style */
 @media (max-width: 991px) {
 
@@ -742,21 +758,6 @@ form {
 
 }
 
-.logo-face{
-	background-image: url(../assets/images/facebook-svgrepo-com.svg);
-}
-
-.logo-twitter {
-	background-image: url(../assets/images/twitter-svgrepo-com.svg);
-}
-
-.logo-linkedin {
-	background-image: url(../assets/images/linkedin-svgrepo-com.svg);
-}
-
-.logo-rss {
-	background-image: url(../assets/images/rss-svgrepo-com.svg);
-}
 
 @media (max-width: 767px) {
 

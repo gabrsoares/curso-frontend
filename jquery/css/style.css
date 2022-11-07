@@ -106,9 +106,7 @@ a {
 	left: 0;
 	bottom: -52px;
 }
-.navbar-dark .navbar-toggler-icon {
-	background-image: none;
-}
+
 .navbar-dark .navbar-toggler {
 	border-color: #3a8bcd;
 	background-color: #3a8bcd;	
@@ -116,7 +114,7 @@ a {
 	outline: none;
 }
 .navbar-dark .navbar-toggler-icon:after {
-	content: '\f0c9';
+	/* content: '\f0c9'; */
 	color: #FFF;
 	font-size: 22px;
 	line-height: 30px;

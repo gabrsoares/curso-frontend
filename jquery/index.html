@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/owl/css/owl.css">
+    <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>jQuery</title>
 </head>
@@ -19,18 +20,18 @@
             <div class="collapse justify-content-center navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
+                        <a class="nav-link nav-modal-open" href="index.html">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#featured">Produtos</a>
+                        <a class="nav-link" href="#featured" >Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#footer">Sobre nós</a>
+                        <a class="nav-link nav-modal-open" href="#footer" rel="sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contato</a>
+                        <a class="nav-link nav-modal-open" href="#contato" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -140,32 +141,35 @@
         </div>
     </div>
 
-    <div id="contact">
+    <div class="subscribe-form">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 contato">
+                <div class="col-md-12">
                     <div class="section-heading">
                         <div class="line-dec"></div>
-                        <h3>Contato</h3>
+                        <h1>Receba novidades</h1>
                     </div>
-                    <p>Entre em contato conosco pelo formulário!</p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome" required>
+                <div class="col-md-8 offset-md-2">
+                    <div class="main-content">
+                        <p>Insira seus dados abaixo para receber informações atualizadas de nossos produtos</p>
+                        <div class="container">
+                            <form id="subscribe" class="form" action="" method="get">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <fieldset>
+                                            <input name="email" type="text" class="form-control" id="email" value="" placeholder="Seu e-mail..." >
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="button">Inscreva-se</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Endereço de e-mail</label>
-                            <input type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" title="nome@exemplo.com" id="exampleFormControlInput1" placeholder="nome@exemplo.com" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-dark rounded">Enviar</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -186,7 +190,7 @@
                             <li><a href="#">Help</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">How It Works ?</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a class="nav-link nav-modal-open" href="#contato" rel="contato">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -215,10 +219,93 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato" class="visually-hidden"> 
+        <form class="form">
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" name="nome" id="contato-nome" class="form-control" placeholder="Digite seu nome" required>
+                <small id="helpNome" class="text-muted">
+                    Digite um nome válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="text" name="email" id="contato-email" class="form-control" placeholder="Digite seu e-mail" required>
+                <small id="helpEmail" class="text-muted">
+                    Digite um e-mail válido
+                </small>
+            </div>
+
+            <div class="mb-3">
+                <label for="date" class="form-label">Data</label>
+                <input type="text" name="date" id="date" class="form-control" placeholder="Digite uma data válida" required>
+                <small id="helpDate" class="text-muted">
+                    Digite uma data válida
+                </small>
+            </div>
+
+            <div class="mb-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" name="cep" id="cep" class="form-control" placeholder="XXXXX-XXX" required>
+                <small id="helpCep" class="text-muted">
+                    Digite um CEP válido
+                </small>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Celular</label>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="XXXXX-XXXX" required>
+                <small id="helpPhone" class="text-muted">
+                    Digite um telefone válido
+                </small>
+            </div>
+
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="XXX.XXX.XXX-XX" required>
+                <small id="helpCpf" class="text-muted">
+                    Digite um cpf válido
+                </small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+    </div>
+
+    <div id="sobre" class="visually-hidden"> 
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellat nesciunt totam at, doloremque, quam animi nostrum fugiat quia ut eaque itaque aliquam? Harum tempora atque omnis placeat repellendus porro.</p>
+
+    </div>
     
+    <!--Bibliotecas-->
     <script src="./vendor/jquery/jquery-3.6.1.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="./vendor/owl/js/owl.js"></script>
+    <script src="./vendor/jquery-mask/jquery.mask.min.js"></script>
+    <script src="./vendor/jquery-ui/jquery-ui.min.js"></script>
+    <!--Scripts customizados-->
     <script src="./js/custom.js"></script>
 </body>
 </html>

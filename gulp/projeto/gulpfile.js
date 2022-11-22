@@ -7,6 +7,8 @@ const uglify = require('gulp-uglify')
 const image = require('gulp-image')
 const htmlmin = require('gulp-htmlmin')
 const babel = require('gulp-babel')
+const browserSync = require('browser-sync').create()
+const reload = browserSync.reload 
 
 function tarefasCSS(cb) {
 
@@ -77,8 +79,23 @@ function tarefasHTML(callback){
 
 }
 
+gulp.task('serve', function(){
+
+    browserSync.init({
+        server: {
+            baseDir:"./dist"
+        }
+    })
+    gulp.watch('./src/**/*').on('change', process) // repete o processo quando alterar algo em src
+    gulp.watch('./src/**/*').on('change', reload)
+
+})
+
+const process = series( tarefasHTML, tarefasJS, tarefasCSS)
+
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
 
-exports.default = parallel( tarefasHTML, tarefasJS, tarefasCSS)
+
+exports.default = process

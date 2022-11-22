@@ -829,6 +829,9 @@ a {
 	.featured-page #filters {
 		margin-top: 15px;
 		text-align: left;
+	}
+	.sub-input {
+		margin-bottom: 10px;
 	} 
 
 }
@@ -836,6 +839,10 @@ a {
 @media (max-width: 425px) {
 	#logo-img{
 		width: 224px;
+	}
+
+	.sub-input {
+		margin-bottom: 10px;
 	}
 
 }

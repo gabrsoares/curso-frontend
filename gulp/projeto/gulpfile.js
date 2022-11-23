@@ -52,7 +52,7 @@ function tarefasJS(callback){
 
 function tarefasImagem() {
 
-    return gulp.src('dist/images/*')
+    return gulp.src('./src/images/*')
         .pipe(image({
             pngquant: true,
             optipng: false,

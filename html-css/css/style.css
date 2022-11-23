@@ -1,0 +1,143 @@
+/* Arquivo CSS geral com estilos dos elementos de todas as páginas */
+* {
+    box-sizing: border-box;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-size: 62.5%; /* Equivalente a 10px */
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h1, h2, p, li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    font-size: 20px;
+  }
+  .introducao {
+    margin:auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  ul {
+    background-color: #947C51;
+    font-size: 10px;
+  }
+  ul li {
+    font-size: 0.8em; /* equivalente a 16px */
+    font-size: 1.6rem; /* equivalente a 16px */
+    width: 80%;
+    height: 2.5rem; /* equivalente a 30px */
+    border-bottom: #454545 solid 1px;
+  }
+  p {
+    font-size: 1.6rem; /* 16px */      
+  }
+  h2 {
+    font-size: 2rem;
+    height: 3rem;
+    color: #000;
+  }
+  /* Style the header */
+  header {
+    background-color: #105099;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+
+  }
+  form div{
+    background: #E0DEDA;
+    border: 1px solid #909090;
+    
+    /*
+    border-top: 1px solid #33f;
+    border-left: 1px solid #33f;
+    border-right: 1px solid #33f;
+    */
+    margin: 1rem 2rem;
+    padding: 3rem 2rem 2rem 2rem;
+  }
+  label{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #222;
+  }
+  input {
+    padding: 1rem;
+  }
+  [type="text"], [type="email"], textarea, label {
+    width: 100%; display: block;
+  }
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 20%;
+    background: #947C51;
+    padding: 20px;
+  }
+
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #E0DEDA;
+  }
+ 
+  /* Clear floats after the columns */
+  section::after {
+    background: #ccc;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the footer */
+  footer {
+    background-color: #105099;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  footer p{
+    color: #000;
+    height: 2rem;
+    font-size: 1.8rem;
+  }
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+form div {
+  position: static;
+  position: relative;
+  top: -10px;
+}
+
+label {
+  position: absolute;
+  top: 5px;
+}
+  

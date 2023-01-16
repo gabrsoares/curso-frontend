@@ -1,52 +1,55 @@
-# Curso-frontend
-#### EBAC
+## Objetos
+- Fórmula / Molde dinâmico
+- Coleção de propriedas (atribuitos)
+- Associáveis (chave / valor)
+- Relação com objetos da vida real
+- Atributos: cor, forma, material, peso, identificação, etc.
 
-# GIT
+## Programação Orientada a Objetos (OOP) 
+- Paradigma / Modelo de programação
+- Forma diferente de "pensar" no código
+- Padrão utilizado em linguagens com Java, C#, PHP...
 
-## Conceitos de versionamento 
+## Classes
+- Introduzidas no ECMAScript 2015
+- Simplificações
+- Herança
+- Frameworks
+- De fato são "funções especiais"
+- Método construtor: constructor
 
-- Histórico
-- Controle de versão
-- Quem alterou
-- O quê alterou
-- Quando alterou
-- Todos os arquivos
-- Evolução contínua
+## Arrow Functions
+ - Multiplos parâmetros: (p1, p2, ..., pN) => { expressao }
+ - Expressão / Algoritmo simples: (p1, p2) => expressao 
+ - Único parâmetro: p1 => { expressao }
 
-Arquivo A | Versão 1 | Versão 2 Arquivo B | Versão 1 | Versão 2
+ # Manipulação de Dados
 
-## Instalação do Git
-https://git-scm.com/
+- JavaScript trabalha com tipagem dinâmica (números, textos, strings, objetos, arrays)
+ `let x = 0` 
+ `x = 'a'`
 
-- Windows: https://git-scm.com/download/win
-- Linux: (apt-get): sudo apt-get install git
-- Mac (brew): brew install git
+## Arrays 
+- filter
+- forEach
+- reduce
+- map
 
-## Criar conta no Github
+## Export e Import
+- São recursos do EcmaScript Modules
 
-## Clonar o projeto 
+## TypeScript
+https://www.typescriptlang.org/
+### Tipos de dados
+- boolean
+- string ("Texto", 'exemplo')
+- arrays
+- tuple
 
-git clone https://github.com/cavalcantemmarcelo/curso-frontend.git
-
-## Commits
-
-Informação de alteração
-
-- Após testado todo o seu código 
-- git add *
-- git commit -m "mensagem"
-- git push (enviar alterações para o repositório)
-- git pull (puxar / trazer alterações do github para sua máquina)
-
-## Gitflow
-Fluxo do git
-
-### Branchs
-são ramificações / versões paralelas
-
-- main / master (vai para produção quando o projeto é publicado)
-- develop
-- DOD Definition of Done: critérios de aceite
-- versionamento 1.0.0
+## JS Linter / ES List
 
 
+## Framework
+- React 
+- Vue.js (https://vuejs.org/)
+- Angular (https://angular.io/)

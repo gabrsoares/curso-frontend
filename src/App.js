@@ -1,11 +1,9 @@
-import { Button } from "./Components/Button";
-import { Input } from "./Components/Input";
+import Car from "./Components/Car";
 
 function App() {
   return (
     <div className="App">
-      <Button title='Olá'/>
-      <Input/>
+      <Car/>
     </div>
   );
 }
